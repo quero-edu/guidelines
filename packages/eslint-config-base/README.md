@@ -1,4 +1,4 @@
-# `@quero/quero-eslint-base`
+# `@quero/eslint-config-base`
 
 ## Rules
 
