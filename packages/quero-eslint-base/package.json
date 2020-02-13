@@ -1,0 +1,14 @@
+{
+  "name": "@quero/quero-eslint-base",
+  "version": "1.0.0",
+  "description": "Base eslint config for JavaScript projects for Quero Education",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
