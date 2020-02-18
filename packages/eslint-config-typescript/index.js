@@ -1,15 +1,8 @@
 module.exports = {
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
   extends: [
     '@quero/eslint-config-base',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking'
-  ],
-  plugins: [
-    '@typescript-eslint',
   ],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
