@@ -12,6 +12,7 @@ module.exports = {
     'eol-last': ['error', 'always'],
     'eqeqeq': ['error', 'always'],
     'indent': ['error', 2, { 'SwitchCase': 1 }],
+    'linebreak-style': ['error', 'unix'],
     'key-spacing': [
       'error',
       {
