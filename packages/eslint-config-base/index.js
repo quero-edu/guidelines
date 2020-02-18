@@ -92,6 +92,5 @@ module.exports = {
         'ignoreRestSiblings': true,
       },
     ],
-    'no-unexpected-multiline': 'warn',
   },
 };
