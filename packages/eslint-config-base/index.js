@@ -12,6 +12,7 @@ module.exports = {
     'eol-last': ['error', 'always'],
     'eqeqeq': ['error', 'always'],
     'indent': ['error', 2, { 'SwitchCase': 1 }],
+    'no-mixed-spaces-and-tabs': 'error',
     'linebreak-style': ['error', 'unix'],
     'key-spacing': [
       'error',
@@ -28,9 +29,11 @@ module.exports = {
         'before': true,
       },
     ],
+    'no-dupe-keys': 'error',
     'no-unsafe-finally': 'error',
     'no-undef-init': 'error',
     'no-trailing-spaces': 'error',
+    'no-unreachable': 'warn',
     'no-throw-literal': 'error',
     'no-new-wrappers': 'error',
     'no-invalid-this': 'off',
@@ -43,6 +46,7 @@ module.exports = {
     'no-duplicate-imports': ['error'],
     'no-extra-semi': ['error'],
     'no-empty': 'error',
+    'no-irregular-whitespace': 'error',
     'no-multiple-empty-lines': [
       'error',
       {
@@ -52,7 +56,6 @@ module.exports = {
     ],
     'no-multi-spaces': ['error'],
     'no-return-await': ['error'],
-    'no-trailing-spaces': ['error'],
     'no-undef': ['error'],
     'no-var': 'error',
     'object-curly-newline': ['error', {
@@ -89,5 +92,6 @@ module.exports = {
         'ignoreRestSiblings': true,
       },
     ],
+    'no-unexpected-multiline': 'warn',
   },
 };
