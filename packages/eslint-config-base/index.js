@@ -31,10 +31,6 @@ module.exports = {
     'no-undef-init': 'error',
     'no-trailing-spaces': 'error',
     'no-throw-literal': 'error',
-    'no-shadow': [
-      'error',
-      { 'hoist': 'all' },
-    ],
     'no-new-wrappers': 'error',
     'no-invalid-this': 'off',
     'no-fallthrough': 'off',
