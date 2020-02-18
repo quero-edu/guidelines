@@ -39,9 +39,8 @@ module.exports = {
     'no-invalid-this': 'off',
     'no-fallthrough': 'off',
     'no-eval': 'error',
-    'no-cond-assign': 'error',
     'no-caller': 'error',
-    'no-console': 'error',
+    'no-console': 'warn',
     'no-debugger': 'error',
     'no-bitwise': 'error',
     'no-duplicate-imports': ['error'],
@@ -62,7 +61,16 @@ module.exports = {
     'object-curly-newline': ['error', {
       'consistent': true,
     }],
-    'spaced-comment': 'error',
+    'spaced-comment': ['error', 'always', {
+      'line': {
+        'markers': ['/'],
+      },
+      'block': {
+        'markers': ['!'],
+        'exceptions': ['*'],
+        'balanced': true,
+      },
+    }],
     'radix': 'error',
     'object-curly-spacing': ['error', 'always'],
     'padding-line-between-statements': ['error',
