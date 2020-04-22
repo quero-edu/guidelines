@@ -46,6 +46,7 @@ module.exports = {
     'no-duplicate-imports': ['error'],
     'no-extra-semi': ['error'],
     'no-empty': 'error',
+    'no-implicit-coercion': 'error',
     'no-irregular-whitespace': 'error',
     'no-multiple-empty-lines': [
       'error',
