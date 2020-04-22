@@ -5,6 +5,13 @@
 **arrow-parens:**
 
 ```js
+// BAD:
+(a) => console.log(a);
+
+a => {
+  console.log(a);
+}
+
 // GOOD:
 () => {};
 
@@ -15,13 +22,6 @@ a => console.log(a);
 (a) => {
   console.log(a);
 };
-
-//BAD:
-(a) => console.log(a);
-
-a => {
-  console.log(a);
-}
 ```
 
 **brace-style:**
