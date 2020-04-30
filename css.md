@@ -55,3 +55,45 @@ Todas as propriedades dentro de uma classe devem estar ordenadas alfabeticamente
 ~~Preencher depois~~
 
 [1]: http://getbem.com/introduction/
+
+## Guidelines
+
+### Especificidade regra
+
+Mantenha a especificidade da regra a mais baixa que conseguir.
+
+```scss
+/* BAD */
+.bloco__elemento {
+  ...
+  &.bloco__elemento--modificador {
+    ...
+  }
+  & .bloco__outro-elemento {
+    ...
+  }
+  & .bloco__mais-outro-elemento {
+    ...
+  }
+}
+
+/* GOOD */
+.bloco__elemento {
+  ...
+}
+
+.bloco__elemento--modificador {
+  ...
+}
+
+.bloco__outro-elemento {
+  ...
+}
+
+.bloco__mais-outro-elemento {
+  ...
+}
+```
+
+Isso faz a especificidade do CSS crescer desnecessariamente, deixando o código não escalável
+E o próprio BEM cria uma relação clara e tem o propósito de deixar a especificidade o menor possível
