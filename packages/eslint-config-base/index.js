@@ -4,6 +4,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'array-bracket-spacing': ['error', 'never'],
     'arrow-parens': ['error', 'as-needed', { 'requireForBlockBody': true }],
     'brace-style': ['error'],
     'comma-dangle': ['error', 'always-multiline'],
