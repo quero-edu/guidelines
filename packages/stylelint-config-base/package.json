@@ -1,0 +1,17 @@
+{
+  "name": "@quero/stylelint-config-base",
+  "version": "1.0.0",
+  "description": "Base stylelint config for css and scss in Quero Education's projects",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "stylelint": "13.3.3"
+  },
+  "dependencies": {
+    "stylelint-config-lintheus": "^1.1.3"
+  }
+}
