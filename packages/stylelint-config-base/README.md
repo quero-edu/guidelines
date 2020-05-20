@@ -6,8 +6,6 @@
 
 https://stylelint.io/user-guide/rules/block-no-empty
 
-The following patterns are considered violations:
-
 ```css
 /**
  * BAD
@@ -37,8 +35,6 @@ a {
 
 https://stylelint.io/user-guide/rules/block-no-empty
 
-The following patterns are considered violations:
-
 ```css
 /**
  * BAD
@@ -59,8 +55,6 @@ a { color: var(--white); }
 *`declaration-no-important`*
 
 https://stylelint.io/user-guide/rules/declaration-no-important
-
-The following patterns are considered violations:
 
 ```css
 /**
