@@ -1,5 +1,7 @@
 # `@quero/stylelint-config-base`
 
+Try avoiding [ignoring rules](https://stylelint.io/user-guide/ignore-code).
+
 ## Rules
 
 *`block-no-empty`*
