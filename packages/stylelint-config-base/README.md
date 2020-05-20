@@ -71,3 +71,55 @@ a { color: pink!important; }
 
 a { color: pink; }
 ```
+
+*`no-descending-specificity`*
+
+https://stylelint.io/user-guide/rules/no-descending-specificity
+
+```css
+/**
+ * BAD
+ */
+
+b a {}
+a {}
+a + a {}
+a {}
+b > a[foo] {}
+a[foo] {}
+a {
+  & > b {}
+}
+b {}
+@media print {
+  #c a {}
+  a {}
+}
+
+/**
+ * GOOD
+ */
+
+a {}
+b a {}
+a {}
+a + a {}
+a[foo] {}
+b > a[foo] {}
+b {}
+a {
+  & > b {}
+}
+a::before {}
+a:hover::before {}
+a {}
+a:hover {}
+@media print {
+  a {}
+  #c a {}
+}
+a {}
+@media print {
+  #baz a {}
+}
+```
