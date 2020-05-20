@@ -123,3 +123,33 @@ a {}
   #baz a {}
 }
 ```
+
+*`selector-max-specificity`*
+
+https://stylelint.io/user-guide/rules/selector-max-specificity
+
+```css
+/**
+ * BAD
+ */
+
+#foo {}
+.foo .baz .bar {}
+.foo .baz {
+  & .bar {}
+}
+.foo {
+  color: red;
+  @nest .baz .bar & {
+    color: blue;
+  }
+}
+
+/**
+ * GOOD
+ */
+
+.foo {}
+.foo__bar {
+.foo__bar--baz {}
+```

@@ -6,5 +6,6 @@ module.exports = {
     'no-descending-specificity': [true, {
       ignore: ['selectors-within-list']
     }],
+    'selector-max-specificity': '0,1,0',
   },
 };
