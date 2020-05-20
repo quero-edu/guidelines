@@ -11,7 +11,5 @@
   "peerDependencies": {
     "stylelint": "13.3.3"
   },
-  "dependencies": {
-    "stylelint-config-lintheus": "^1.1.3"
-  }
+  "dependencies": {}
 }
