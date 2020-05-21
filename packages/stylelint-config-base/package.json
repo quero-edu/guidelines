@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-    "stylelint": "13.3.3"
+    "stylelint": ">= 13.0.0"
   },
   "dependencies": {}
 }
