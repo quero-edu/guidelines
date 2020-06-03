@@ -13,6 +13,7 @@ module.exports = {
     'eqeqeq': ['error', 'always'],
     'indent': ['error', 2, { 'SwitchCase': 1 }],
     'no-mixed-spaces-and-tabs': 'error',
+    'quote-props': ['error', 'consistent-as-needed'],
     'linebreak-style': ['error', 'unix'],
     'key-spacing': [
       'error',
