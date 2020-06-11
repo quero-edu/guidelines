@@ -45,6 +45,7 @@ module.exports = {
     'no-bitwise': 'error',
     'no-duplicate-imports': ['error'],
     'no-extra-semi': ['error'],
+    'no-else-return': ['error', { allowElseIf: false }],
     'no-empty': 'error',
     'no-implicit-coercion': 'error',
     'no-irregular-whitespace': 'error',
