@@ -13,13 +13,16 @@ For lint configuration packages
 This package uses the basis of [SEMVER](https://semver.org/). You should bump
 the version according to this logic:
 
+> **COMPLETELY**: means a rule that says that **all** cases can be fixed by using `--fix`
+
 Bump the **major version** if:
-- a rule that can't be fixed with the `--fix` command was added or changed;
+- a rule that can't be COMPLETELY fixed with the `--fix` command was added or changed;
 
 Bump the **minor version** if:
-- a rule was added and it is fixable with the `--fix` command;
-- a rule was removed;
-- a dependency was upgraded;
+- a `peerDependency` (on any package.json) was upgraded;
+- a rule was added and it is COMPLETELY fixable with the `--fix` command;
 
 Bump the **patch version** if:
-- any rule options were changed but they are fixable with the `--fix` command;
+- a `dependency` (on any package.json) was upgraded;
+- a rule was removed;
+- any rule options were changed but they are COMPLETELY fixable with the `--fix` command;
