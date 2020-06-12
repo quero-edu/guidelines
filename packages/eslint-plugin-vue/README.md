@@ -43,6 +43,17 @@ More resources that are an interesting read before/while:
 
 ### `template-kebab-name-for-unregistered-components`
 
+<details>
+<summary>
+Enforce the use of kebab-case for naming global components in
+<code>&lt;template&gt;</code>.
+</summary>
+
+This ensures that we have a clear distinction between components that are
+declared locally vs components that we have to search the project for.
+
+</details>
+
 ```vue
 <template>
   <div>
