@@ -1,0 +1,16 @@
+{
+  "name": "@quero/eslint-plugin-vue",
+  "version": "1.0.0",
+  "description": "A bunch of rules we decided to create ourselves",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "vue",
+    "rules"
+  ],
+  "author": "",
+  "license": "MIT"
+}
