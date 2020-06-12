@@ -29,7 +29,7 @@ module.exports = {
         context.report({
           node: open,
           loc: open.loc,
-          message: 'Component name "{{name}}", is not kebab-case. Name it "{{kebabcased}}" or register it locally',
+          message: 'Component name "{{name}}" is not kebab-case. Name it "{{kebabcased}}" or register it locally',
           data: { name, kebabcased },
           fix(fixer) {
             const endTag = node.endTag;
