@@ -1,6 +1,6 @@
 {
   "name": "@quero/eslint-plugin-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bunch of rules we decided to create ourselves",
   "main": "src/index.js",
   "scripts": {
