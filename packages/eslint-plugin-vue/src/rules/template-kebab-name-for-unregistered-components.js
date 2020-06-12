@@ -58,7 +58,7 @@ module.exports = {
 
         const { properties } = node.declaration;
 
-        const components = (((properties
+        const components = ((((properties || [])
           .find(property => property.key.name === 'components') || {})
           .value || {})
           .properties || [])
