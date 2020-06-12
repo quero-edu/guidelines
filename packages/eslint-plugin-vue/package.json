@@ -4,7 +4,7 @@
   "description": "A bunch of rules we decided to create ourselves",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "eslint -R ."
   },
   "keywords": [
     "eslint",
@@ -12,5 +12,9 @@
     "rules"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@quero/eslint-config-base": "file:../eslint-config-base",
+    "eslint": "^7.2.0"
+  }
 }
