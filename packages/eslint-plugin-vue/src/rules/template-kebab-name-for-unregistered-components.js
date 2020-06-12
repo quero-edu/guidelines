@@ -58,10 +58,10 @@ module.exports = {
 
         const { properties } = node.declaration;
 
-        const components = properties
-          .find(property => property.key.name === 'components')
-          .value
-          .properties
+        const components = (((properties
+          .find(property => property.key.name === 'components') || {})
+          .value || {})
+          .properties || [])
           .map(component => component.key.name);
 
         localregisteredComponents.push(...components);

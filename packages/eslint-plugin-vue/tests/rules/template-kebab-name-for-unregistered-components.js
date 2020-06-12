@@ -35,6 +35,24 @@ tester.run('template-kebab-name-for-unregistered-components', rule, {
       `,
     },
     {
+      filename: 'test.vue',
+      code: `
+        <template>
+          <!-- ✓ GOOD -->
+          <cool-component />
+          <unregistered-component />
+          <div></div>
+          <h1></h1>
+          <svg></svg>
+        </template>
+        <script>
+        export default {
+          name: 'what-ever',
+        }
+        </script>
+      `,
+    },
+    {
       filename: 'test.js',
       code: `
         export default function (to, from, savedPosition) {
