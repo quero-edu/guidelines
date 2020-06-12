@@ -6,6 +6,7 @@ const kebabcase = require('just-kebab-case');
 module.exports = {
   create(context) {
     const localregisteredComponents = [];
+    let isVueFile = false;
 
     // Don't know why this is necessary, but a really respectable open source
     // lib does this token jiggle every time, so...
@@ -14,6 +15,8 @@ module.exports = {
 
     return context.parserServices.defineTemplateBodyVisitor({
       VElement(node) {
+        if (!isVueFile) return;
+
         const name = node.rawName;
         const open = tokens.getFirstToken(node.startTag);
 
@@ -47,7 +50,12 @@ module.exports = {
         });
       },
     }, {
+      Program(node) {
+        isVueFile = node.hasOwnProperty('templateBody');
+      },
       ExportDefaultDeclaration(node) {
+        if (!isVueFile) return;
+
         const { properties } = node.declaration;
 
         const components = properties
