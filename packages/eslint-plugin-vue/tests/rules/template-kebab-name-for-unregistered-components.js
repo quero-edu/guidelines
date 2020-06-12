@@ -126,6 +126,7 @@ tester.run('template-kebab-name-for-unregistered-components', rule, {
 
           <!-- ✗ BAD -->
           <UnregisteredComponent />
+          <UnregisteredComponent></UnregisteredComponent>
         </template>
         <script>
         export default {
@@ -151,6 +152,7 @@ tester.run('template-kebab-name-for-unregistered-components', rule, {
 
           <!-- ✗ BAD -->
           <unregistered-component />
+          <unregistered-component></unregistered-component>
         </template>
         <script>
         export default {

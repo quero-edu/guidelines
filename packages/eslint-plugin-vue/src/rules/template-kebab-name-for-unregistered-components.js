@@ -44,7 +44,7 @@ module.exports = {
             const endTagOpen = tokens.getFirstToken(endTag);
             return [
               fixer.replaceText(open, `<${kebabcased}`),
-              fixer.replaceText(endTagOpen, `<${kebabcased}`),
+              fixer.replaceText(endTagOpen, `</${kebabcased}`),
             ];
           },
         });
