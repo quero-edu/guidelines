@@ -4,7 +4,7 @@
   "description": "A bunch of rules we decided to create ourselves",
   "main": "src/index.js",
   "scripts": {
-    "test": "eslint -R ."
+    "test": "eslint . && npx ./tests/**/*.js"
   },
   "repository": {
     "url": "git+https://github.com/quero-edu/guidelines.git"
