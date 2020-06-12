@@ -6,6 +6,9 @@
   "scripts": {
     "test": "eslint -R ."
   },
+  "repository": {
+    "url": "git+https://github.com/quero-edu/guidelines.git"
+  },
   "keywords": [
     "eslint",
     "vue",
