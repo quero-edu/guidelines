@@ -32,3 +32,35 @@ The rule window, should export a function that is the rule you are developing.
 
 For more information on how to create your first rule, see [How To Write Your
 First ESLint Plugin](https://dev.to/spukas/how-to-write-your-first-eslint-plugin-145).
+
+## Rules
+
+### `template-kebab-name-for-unregistered-components`
+
+```vue
+<template>
+  <div>
+    <!-- BAD -->
+    <GlobalComponent></GlobalComponent>
+    <local-component></local-component>
+
+    <!-- GOOD -->
+    <global-component></global-component>
+    <LocalComponent></LocalComponent>
+  </div>
+</template>
+
+<script>
+const LocalComponent = {
+  render(h) {
+    return h('div');
+  },
+};
+
+export default {
+  components: {
+    LocalComponent,
+  },
+}
+</script>
+```

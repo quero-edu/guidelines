@@ -2,7 +2,7 @@
   "name": "@quero/eslint-plugin-vue",
   "version": "1.0.0",
   "description": "A bunch of rules we decided to create ourselves",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "eslint -R ."
   },
@@ -15,6 +15,13 @@
   "license": "MIT",
   "devDependencies": {
     "@quero/eslint-config-base": "file:../eslint-config-base",
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.2.0"
+  },
+  "dependencies": {
+    "html-tag-names": "^1.1.5",
+    "just-kebab-case": "^1.1.0",
+    "pascalcase": "^1.0.0",
+    "svg-tag-names": "^2.0.1"
   }
 }
