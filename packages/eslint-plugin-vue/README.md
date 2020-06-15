@@ -9,7 +9,14 @@ This project is for rules that we decided to implement ourselves.
 <a name="rules"></a>
 ## Rules
 
-### `template-kebab-name-for-unregistered-components`
+Legend:
+
+| icon      | meaning           |
+| ----      | -------           |
+| :wrench:  | Fixable           |
+| :wrench:* | Partially fixable |
+
+### `template-kebab-name-for-unregistered-components` :wrench:*
 
 <details>
 <summary>
@@ -17,6 +24,8 @@ Enforce the use of kebab-case for naming global components in <code>&lt;template
 </summary>
 
 This ensures that we have a clear distinction between components that are declared locally vs components that we have to search the project for.
+
+This rule is fixable, but only if the component don't have any `extend` declaration, because if thats the case, we cannot see which components are being loaded or not.
 
 </details>
 
