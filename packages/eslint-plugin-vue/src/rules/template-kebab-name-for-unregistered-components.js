@@ -7,6 +7,7 @@ module.exports = {
   create(context) {
     const localregisteredComponents = [];
     let isVueFile = false;
+    let isExtended = false;
 
     // Don't know why this is necessary, but a really respectable open source
     // lib does this token jiggle every time, so...
@@ -35,6 +36,8 @@ module.exports = {
           message: 'Component name "{{name}}" is not kebab-case. Name it "{{kebabcased}}" or register it locally',
           data: { name, kebabcased },
           fix(fixer) {
+            if (isExtended) return;
+
             const endTag = node.endTag;
 
             if (!endTag) {
@@ -56,9 +59,11 @@ module.exports = {
       ExportDefaultDeclaration(node) {
         if (!isVueFile) return;
 
-        const { properties } = node.declaration;
+        const properties = node.declaration.properties || [];
 
-        const components = ((((properties || [])
+        isExtended = properties.find(property => property.key.name === 'extends');
+
+        const components = (((properties
           .find(property => property.key.name === 'components') || {})
           .value || {})
           .properties || [])
