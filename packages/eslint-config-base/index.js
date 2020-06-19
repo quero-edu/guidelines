@@ -41,7 +41,7 @@ module.exports = {
     'no-eval': 'error',
     'no-caller': 'error',
     'no-console': 'warn',
-    'no-debugger': 'error',
+    'no-debugger': 'warn',
     'no-bitwise': 'error',
     'no-duplicate-imports': ['error'],
     'no-extra-semi': ['error'],
