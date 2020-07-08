@@ -23,6 +23,7 @@ Bump the **minor version** if:
 - a rule was added and it is COMPLETELY fixable with the `--fix` command;
 
 Bump the **patch version** if:
+- a rule severity was changed
 - a `dependency` (on any package.json) was upgraded;
 - a rule was removed;
 - any rule options were changed but they are COMPLETELY fixable with the `--fix` command;
