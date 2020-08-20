@@ -1,15 +1,7 @@
 'use strict';
 
 const rule = require('../../src/rules/template-kebab-name-for-unregistered-components');
-const RuleTester = require('eslint').RuleTester;
-
-const tester = new RuleTester({
-  parser: require.resolve('vue-eslint-parser'),
-  parserOptions: {
-    ecmaVersion: 11,
-    sourceType: 'module',
-  },
-});
+const { tester } = require('../tester');
 
 tester.run('template-kebab-name-for-unregistered-components', rule, {
   valid: [
