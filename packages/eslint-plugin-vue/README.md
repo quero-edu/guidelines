@@ -84,15 +84,15 @@ delete the unused component on this case.
 With the default configuration everything will pass. But if a `deprecate`
 option is provided like the example bellow; every component named
 "deprecate-component-name" will trigger a warn to be substituted by
-"subistituted-component"
+"substituted-component"
 
 ```json
 {
   "rules": {
     "@quero/vue/deprecate-components-in-favor-of": ["warn", {
       "deprecate": {
-        "deprecated-component-name": "subistituted-component",
-        "AnotherExample": "subistituted-component"
+        "deprecated-component-name": "substituted-component",
+        "AnotherExample": "substituted-component"
       }
     }]
   }
