@@ -57,6 +57,78 @@ export default {
 </script>
 ```
 
+### `deprecate-components-in-favor-of`
+
+<details>
+<summary>
+A nice reminder on the lint that you shouldn't use this component, use the
+other one instead
+</summary>
+
+It's super recommended running this rule as `warn`, otherwise, what would be
+the point of using this rule at all if the rule will fail everything? Just
+delete the unused component on this case.
+
+</details>
+
+#### Default
+
+```json
+{
+  "rules": {
+    "@quero/vue/deprecate-components-in-favor-of": ["warn", { }]
+  }
+}
+```
+
+With the default configuration everything will pass. But if a `deprecate`
+option is provided like the example bellow; every component named
+"deprecate-component-name" will trigger a warn to be substituted by
+"substituted-component"
+
+```json
+{
+  "rules": {
+    "@quero/vue/deprecate-components-in-favor-of": ["warn", {
+      "deprecate": {
+        "deprecated-component-name": "substituted-component",
+        "AnotherExample": "substituted-component"
+      }
+    }]
+  }
+}
+```
+
+```vue
+<template>
+  <div>
+    <!-- BAD -->
+    <DeprecatedComponentName></GlobalComponeDeprecatedComponentName>
+    <deprecated-component-name></deprecated-component-name>
+    <deprecated-component-name />
+    <AnotherExample />
+    <another-example />
+
+    <!-- GOOD -->
+    <!-- literally anything else -->
+  </div>
+</template>
+
+<script>
+const LocalComponent = {
+  render(h) {
+    return h('div');
+  },
+};
+
+export default {
+  components: {
+    LocalComponent,
+  },
+}
+</script>
+```
+
 <a name="developing"></a>
 ## Developing
 
