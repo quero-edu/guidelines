@@ -61,7 +61,11 @@ module.exports = {
 
         const properties = node.declaration.properties || [];
 
-        isExtended = properties.find(property => property.key.name === 'extends');
+        isExtended = properties.find((property) => {
+          if (property.type !== 'Property') return false;
+
+          return property.key.name === 'extends';
+        });
 
         const components = (((properties
           .find(property => property.key.name === 'components') || {})
