@@ -100,7 +100,7 @@ E o próprio BEM cria uma relação clara e tem o propósito de deixar a especif
 
 ### Composição
 
-E muito comum ver a composição de classes BEM com sass da seguinte forma:
+É muito comum ver a composição de classes BEM com Sass da seguinte forma:
 
 ```scss
 .accordion {
