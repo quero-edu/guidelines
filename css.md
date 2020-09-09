@@ -113,11 +113,11 @@ E o próprio BEM cria uma relação clara e tem o propósito de deixar a especif
 }
 ```
 
-No entanto isso ta fora do nosso styleguide. Alguns dos motivos são:
-- Hoje ja temos uma base de código grande fora desse formato
-- Esse formato pode dificultar a manutenção para devs com menos familiaridade no front-end
-- Pela forma como é feita essa composição, é comum voce acabar aumentando a especificidade
- erroneamente
+No entanto isso está fora do nosso styleguide. Alguns dos motivos são:
+- Hoje já temos uma base de código grande fora desse formato;
+- Esse formato pode dificultar a manutenção para devs com menos familiaridade no front-end;
+- Pela forma como é feita essa composição, é comum acabar aumentando a especificidade
+ erroneamente.
 
 A forma indicada a se fazer nesse caso seria:
 
