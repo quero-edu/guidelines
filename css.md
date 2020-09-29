@@ -97,3 +97,38 @@ Mantenha a especificidade da regra a mais baixa que conseguir.
 
 Isso faz a especificidade do CSS crescer desnecessariamente, deixando o código não escalável
 E o próprio BEM cria uma relação clara e tem o propósito de deixar a especificidade o menor possível
+
+### Composição
+
+É muito comum ver a composição de classes BEM com Sass da seguinte forma:
+
+```scss
+.accordion {
+  &__element {
+    color: white;
+  }
+  &--modifier {
+    background-color: red;
+  }
+}
+```
+
+No entanto isso está fora do nosso styleguide. Alguns dos motivos são:
+- Hoje já temos uma base de código grande fora desse formato;
+- Esse formato pode dificultar a manutenção para devs com menos familiaridade no front-end;
+- Pela forma como é feita essa composição, é comum acabar aumentando a especificidade
+ erroneamente.
+
+A forma indicada a se fazer nesse caso seria:
+
+```scss
+.accordion {}
+
+.accordion__element {
+  color: white;
+}
+
+.accordion--modifier {
+  background-color: red;
+}
+```
