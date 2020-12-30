@@ -11,5 +11,7 @@
   "peerDependencies": {
     "stylelint": ">= 13.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "stylelint-order": "^4.1.0"
+  }
 }
