@@ -1,5 +1,5 @@
 module.exports = {
-  env: { node: true },
+  env: { node: true, jest: true },
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 11,

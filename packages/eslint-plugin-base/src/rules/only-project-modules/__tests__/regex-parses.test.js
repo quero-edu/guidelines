@@ -1,26 +1,70 @@
 import {
   createRegexForNodeModules,
-  createRegexForProjectModules
-} from "../regex-parses";
+  createRegexForProjectModules,
+} from '../regex-parses';
 
-describe("The regex of rule only-project-modules work correctly", () => {
-  const nodeModules = [
-    'vue',
-    'vuex',
-  ];
+describe('The regex of rule only-project-modules work correctly', () => {
+  describe('when node modules match correctly', () => {
+    const nodeModules = ['vue', 'vuex'];
 
-  it("node modules regex match correctly", () => {
     const regexForNodeModules = createRegexForNodeModules(nodeModules);
 
-    const correctPathsToTest = ['vue', 'vue/utils.js', 'vue/dist/internal-module.js'];
-    const wrongPathsToTest = ['vue-router', 'vue-components', 'jquery'];
+    it('project modules match returns true', () => {
+      const correctPathsToTest = [
+        'vue',
+        'vue/utils.js',
+        'vue/dist/internal-module.js',
+      ];
 
-    correctPathsToTest.map(path => {
-      expect(regexForNodeModules.some(rule => rule.test(path))).toBeTruthy();
+      correctPathsToTest.map((path) => {
+        const result = regexForNodeModules.some(rule => rule.test(path));
+        expect(result).toBeTruthy();
+      });
     });
 
-    wrongPathsToTest.map(path => {
-      expect(regexForNodeModules.some(rule => rule.test(path))).toBeFalsy();
+    it('project modules match returns false', () => {
+      const wrongPathsToTest = ['vue-router', 'vue-components', 'jquery'];
+
+      wrongPathsToTest.map((path) => {
+        const result = regexForNodeModules.some(rule => rule.test(path));
+        expect(result).toBeFalsy();
+      });
+    });
+  });
+
+  describe('when project modules match correctly', () => {
+    const projectModules = ['@database', 'example/potato/*', 'epic/**'];
+
+    const regexForProjectModules = createRegexForProjectModules(projectModules);
+
+    it('project modules match returns true', () => {
+      const correctPathsToTest = [
+        '@database',
+        'example/potato/banana',
+        'example/potato',
+        'epic/potato/pera',
+        'epic/tomato',
+      ];
+
+      correctPathsToTest.map((path) => {
+        const result = regexForProjectModules.some(rule => rule.test(path));
+
+        expect(result).toBeTruthy();
+      });
+    });
+
+    it('project modules match returns false', () => {
+      const wrongPathsToTest = [
+        '@database/fake',
+        'example',
+        'example/potato/abacate/pera',
+        'epico',
+      ];
+
+      wrongPathsToTest.map((path) => {
+        const result = regexForProjectModules.some(rule => rule.test(path));
+        expect(result).toBeFalsy();
+      });
     });
   });
 });
