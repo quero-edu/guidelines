@@ -1,5 +1,8 @@
 module.exports = {
-  plugins: ['stylelint-order'],
+  plugins: [
+    'stylelint-order',
+    'stylelint-scss'
+  ],
   rules: {
     'at-rule-empty-line-before': [
       'always',
@@ -10,7 +13,7 @@ module.exports = {
     ],
     'at-rule-name-case': 'lower',
     'at-rule-name-space-after': 'always-single-line',
-    'at-rule-no-unknown': true,
+    'at-rule-no-unknown': null,
     'at-rule-semicolon-newline-after': 'always',
     'block-closing-brace-empty-line-before': 'never',
     'block-closing-brace-newline-after': 'always',
@@ -113,6 +116,7 @@ module.exports = {
         ignore: ['after-comment'],
       },
     ],
+    'scss/at-rule-no-unknown': true,
     'selector-attribute-brackets-space-inside': 'never',
     'selector-attribute-operator-space-after': 'never',
     'selector-attribute-operator-space-before': 'never',
@@ -131,6 +135,7 @@ module.exports = {
     'selector-type-case': 'lower',
     'selector-type-no-unknown': true,
     'string-no-newline': true,
+    'string-quotes': 'single',
     'unit-case': 'lower',
     'unit-no-unknown': true,
     'value-keyword-case': 'lower',
