@@ -12,42 +12,28 @@ function simpleParser(path) {
 
 function completeParser(path) {
   let value = path;
-  const hasInfiniteImport = path.includes('**');
-  const hasSimpleImport = path.includes('/*');
+  const exactPath = !path.includes('*');
 
-  if (hasInfiniteImport) {
-    value = value.replace(
-      infiniteLevel.patternToCheck,
-      infiniteLevel.patternToReplace,
-    ); // Replace /**
-  }
+  value = value.replace(
+    infiniteLevel.patternToCheck,
+    infiniteLevel.patternToReplace,
+  ); // Replace /**
 
-  if (hasSimpleImport) {
-    value = value.replace(
-      secondLevelInfinite.patternToCheck,
-      secondLevelInfinite.patternToReplace,
-    ); // Replace /*/
+  value = value.replace(
+    secondLevelInfinite.patternToCheck,
+    secondLevelInfinite.patternToReplace,
+  ); // Replace /*/
 
-    value = value.replace(
-      firstLevelInfinite.patternToCheck,
-      firstLevelInfinite.patternToReplace,
-    ); // Replace /*
-  }
+  value = value.replace(
+    firstLevelInfinite.patternToCheck,
+    firstLevelInfinite.patternToReplace,
+  ); // Replace /*
 
-  if (!hasInfiniteImport && !hasSimpleImport) value = value + '$';
+  if (exactPath) value += '$';
 
   value = value.replace(barsRegex.patternToCheck, barsRegex.patternToReplace); // Replace / to \/
 
-  value = new RegExp('^' + value);
-
-  // console.log("\n\n");
-  // console.log("Has Infinite import:", hasInfiniteImport);
-  // console.log("Path:", path);
-  // console.log("Rule:", value);
-  // console.log("Test:", value.test(path));
-  // console.log(new RegExp(path));
-  // return new RegExp('^' + path + '((?:\/)|$)')
-  return value;
+  return new RegExp('^' + value);
 }
 
 function createRegexForNodeModules(nodeModulesConfig) {
