@@ -33,7 +33,7 @@ describe('The regex of rule only-project-modules work correctly', () => {
   });
 
   describe('when project modules match correctly', () => {
-    const projectModules = ['@database', 'example/potato/*', 'epic/**'];
+    const projectModules = ['@database', 'example/potato/*', 'potato/*/ok', 'epic/**'];
 
     const regexForProjectModules = createRegexForProjectModules(projectModules);
 
@@ -44,6 +44,7 @@ describe('The regex of rule only-project-modules work correctly', () => {
         'example/potato',
         'epic/potato/pera',
         'epic/tomato',
+        'potato/foi/ok',
       ];
 
       correctPathsToTest.map((path) => {
@@ -59,6 +60,7 @@ describe('The regex of rule only-project-modules work correctly', () => {
         'example',
         'example/potato/abacate/pera',
         'epico',
+        'potato/foi/gg',
       ];
 
       wrongPathsToTest.map((path) => {

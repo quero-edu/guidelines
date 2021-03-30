@@ -1,7 +1,7 @@
 const secondLevelInfinite = {
   // Replace /*/
   patternToCheck: new RegExp('(\\/)(\\*{1})(\\/)', 'g'),
-  patternToReplace: '(?=/).*(?=/)',
+  patternToReplace: '(?=/).*(?=/)*',
 };
 const firstLevelInfinite = {
   // Replace /*

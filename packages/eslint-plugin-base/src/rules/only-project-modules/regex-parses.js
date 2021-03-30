@@ -3,6 +3,7 @@ const {
   firstLevelInfinite,
   infiniteLevel,
   barsRegex,
+  secondLevelInfinite,
 } = require('./regex-patterns');
 
 function simpleParser(path) {
@@ -22,6 +23,11 @@ function completeParser(path) {
   }
 
   if (hasSimpleImport) {
+    value = value.replace(
+      secondLevelInfinite.patternToCheck,
+      secondLevelInfinite.patternToReplace,
+    ); // Replace /*/
+
     value = value.replace(
       firstLevelInfinite.patternToCheck,
       firstLevelInfinite.patternToReplace,
