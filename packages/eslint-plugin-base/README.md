@@ -25,7 +25,7 @@ This rule is a helper to create a project directory pattern.
 ```json
 {
   "rules": {
-    "@quero/eslint-plugin-base/only-project-modules": ["warn"]
+    "@quero/base/only-project-modules": ["warn"]
     // All node_modules declared in package.json will be allowed by default
   }
 }
@@ -58,7 +58,7 @@ Example of config:
 ```json
 {
   "rules": {
-    "@quero/eslint-plugin-base/only-project-modules": ["warn", {
+    "@quero/base/only-project-modules": ["warn", {
       "allow": {
         "projectModulesConfig": [
           "exact-path-wanted",
@@ -77,6 +77,12 @@ Example of config:
 }
 ```
 
+#### Paths Config:
+- "`path` - To allow the exact path.
+- "`path/*`" - To allow all modules with one specified level.
+- "`path/**`" - To allow all submodules.
+- "`path/*/submodule`" - To allow all intermediary modules, but only one submodule.
+
 #### Behavior:
 
 ```js
@@ -93,12 +99,6 @@ Example of config:
     import allowed from 'my-full-allowed-sub-level/module';
     import fries from 'potato/fries/now';
 ```
-
-#### Paths Config:
-- "`path` - To allow the exact path.
-- "`path/*`" - To allow all modules with one specified level.
-- "`path/**`" - To allow all submodules.
-- "`path/*/submodule`" - To allow all intermediary modules, but only one submodule.
 
 <a name="developing"></a>
 ## Developing
