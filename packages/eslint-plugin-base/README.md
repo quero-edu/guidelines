@@ -106,7 +106,5 @@ Example of config:
 For more information on how to create your first rule, see [How To Write Your First ESLint Plugin](https://dev.to/spukas/how-to-write-your-first-eslint-plugin-145).
 
 More resources that are an interesting read before/while:
-- [AST for html's template reference](https://github.com/mysticatea/vue-eslint-parser/blob/master/docs/ast.md)
-- [Vue's official eslint rules (the README is good)](https://github.com/vuejs/eslint-plugin-vue)
 - [ESLint rule tester](https://eslint.org/docs/developer-guide/nodejs-api#ruletester)
 - [ESLint doc for configuration](https://eslint.org/docs/user-guide/configuring)
