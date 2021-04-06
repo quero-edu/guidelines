@@ -1,3 +1,3 @@
-const { onlyProjectMdules } = require('./only-project-modules');
+const { onlyProjectModules } = require('./only-project-modules');
 
-module.exports = { onlyProjectMdules };
+module.exports = { onlyProjectModules };

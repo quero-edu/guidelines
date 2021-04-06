@@ -5,7 +5,7 @@ const {
   createRegexForProjectModules,
 } = require('./regex-parses');
 
-const onlyProjectMdules = {
+const onlyProjectModules = {
   create(context) {
     const options = context.options[0] || {};
     const packageJson = readPkgUp.sync({
@@ -67,4 +67,4 @@ const onlyProjectMdules = {
   },
 };
 
-module.exports = { onlyProjectMdules };
+module.exports = { onlyProjectModules };

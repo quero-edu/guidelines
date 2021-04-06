@@ -1,8 +1,8 @@
 
-const { onlyProjectMdules } = require('./rules/only-project-modules');
+const { onlyProjectModules } = require('./rules/only-project-modules');
 
 module.exports = {
   rules: {
-    'only-project-modules': onlyProjectMdules,
+    'only-project-modules': onlyProjectModules,
   },
 };
