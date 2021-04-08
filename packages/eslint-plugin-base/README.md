@@ -22,7 +22,7 @@ This rule is a helper to create a project directory pattern.
 
 #### Default
 
-```json
+```js
 {
   "rules": {
     "@quero/base/only-project-modules": ["warn"]
