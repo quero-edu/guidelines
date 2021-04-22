@@ -1,3 +1,3 @@
 # Guidelines
 
-- [CSS](css.md)
+- [CSS](docs/css.md)
