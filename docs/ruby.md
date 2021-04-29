@@ -22,7 +22,7 @@
 - Use [heredocs] para strings com multiplas linhas.
 - Ordene os métodos de classe acima dos métodos de instância.
 - Prefira a invocação de método ao invés de variáveis ​​de instância.
-- Evite parâmetros opcionais. Será que o método não está fazendo muito coisa?
+- Evite parâmetros opcionais. Será que o método não está fazendo muita coisa?
 - Evite monkey-patching.
 - Gere os [Bundler binstubs] necessários para o projeto, como`rake` e
   `rspec`, e adicione ao controle de versão.
