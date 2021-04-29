@@ -7,7 +7,7 @@
 - Evite modificadores de condicional (linhas que terminam com condicionais).
 - Evite muitas atribuições por linha. (`foo, bar = 1, 2`).
 - Evite comentários com TODO. (`# TODO`).
-- Avoid bang (!) method names. Prefer descriptive names.
+- Evite nomes de métodos bang (!). Prefira nomes descritivos.
 - Prefira `detect` ao invés de `find`.
 - Prefira `select` ao invés de `find_all`.
 - Prefira `map` ao invés de `collect`.
