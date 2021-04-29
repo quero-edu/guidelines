@@ -1,0 +1,75 @@
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
+
+Rails/FindById:
+  Enabled: true
+
+Rails/Inquiry:
+  Enabled: true
+
+Rails/MailerName:
+  Enabled: true
+
+Rails/MatchRoute:
+  Enabled: true
+
+Rails/NegateInclude:
+  Enabled: true
+
+Rails/Pluck:
+  Enabled: true
+
+Rails/PluckInWhere:
+  Enabled: true
+  Exclude:
+    - app/controllers/api/qb/v1/canonical_courses_controller.rb
+    - app/controllers/concerns/admissions/configure_admission_concern.rb
+    - app/models/canonical_course.rb
+    - app/models/commission_invoice.rb
+    - app/models/sms_export.rb
+    - app/models/university.rb
+    - app/presenters/admissions/admission_config_presenter.rb
+    - app/presenters/admissions/configure_form_presenter.rb
+    - app/queries/feed/article_query.rb
+    - app/services/canonical_course_category/postgraduate_header_service.rb
+    - app/services/ops/offers_filter.rb
+    - app/services/pre_user_purge_service.rb
+    - app/services/stock/monitor/check_non_partner_university_with_enabled_offers.rb
+    - db/data/20181009231715_export_mauricio_de_nassau_student_reviews.rb
+    - db/data/20190502142347_update_bo_final_reasons.rb
+    - db/data/20200327141513_populate_whatsapp_chat_types_on_queropago_queues.rb
+    - lib/rails_admin/config/actions/bulk_publish_courses.rb
+    - lib/rails_admin/config/actions/bulk_unpublish_courses.rb
+    - lib/rails_admin/config/actions/open_channel.rb
+    - script/remove_enrollment_code_in_offer.rb
+    - script/stock/update_subsidy_pef.rb
+    - script/university_association_changes.rb
+    - spec/business/importers/offer_importer_spec.rb
+    - spec/controllers/college_reviews/evaluation_controller_spec.rb
+    - spec/services/offer_services/offer_price_service_spec.rb
+    - spec/support/college_reviews/nps_helper.rb
+Rails/RenderInline:
+  Enabled: true
+
+Rails/RenderPlainText:
+  Enabled: true
+
+Rails/ShortI18n:
+  Enabled: true
+
+Rails/WhereExists:
+  Enabled: true
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/UnknownEnv:
+  Enabled: true
+  Environments:
+    - development
+    - test
+    - staging
+    - production

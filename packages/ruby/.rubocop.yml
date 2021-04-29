@@ -1,0 +1,31 @@
+inherit_from:
+  - ./.rubocop/layout.yml
+  - ./.rubocop/lint.yml
+  - ./.rubocop/metrics.yml
+  - ./.rubocop/naming.yml
+  - ./.rubocop/performance.yml
+  - ./.rubocop/style.yml
+  - ./.rubocop/rails.yml
+
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+  DisabledByDefault: true
+  SuggestExtensions: false
+  TargetRubyVersion: 2.6.5
+  Exclude:
+    - Rakefile
+    - bin/**/*
+    - .pryrc
+    - node_modules/**/*
+    - tmp/**/*
+    - coverage/**/*
+    - public/**/*
+    - vendor/**/*
+
+
+Security/Eval:
+  Enabled: true

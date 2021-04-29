@@ -1,0 +1,61 @@
+Naming/AccessorMethodName:
+  Enabled: true
+
+Naming/AsciiIdentifiers:
+  Enabled: true
+
+Naming/BinaryOperatorParameterName:
+  Enabled: true
+
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+
+Naming/ConstantName:
+  Enabled: true
+
+Naming/FileName:
+  Enabled: true
+
+Naming/HeredocDelimiterCase:
+  Enabled: true
+  EnforcedStyle: uppercase
+
+Naming/HeredocDelimiterNaming:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: true
+  EnforcedStyleForLeadingUnderscores: disallowed
+
+Naming/MethodName:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+Naming/PredicateName:
+  Enabled: false
+
+Naming/BlockParameterName:
+  Enabled: false
+
+Naming/MethodParameterName:
+  Enabled: true
+  AllowedNames:
+   - e
+   - at
+   - by
+   - db
+   - id
+   - in
+   - io
+   - ip
+   - of
+   - on
+   - os
+   - pp
+   - to
+Naming/VariableName:
+  Enabled: true
+  EnforcedStyle: snake_case
+
+Naming/VariableNumber:
+  Enabled: false

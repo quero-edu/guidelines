@@ -1,0 +1,29 @@
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockNesting:
+  Enabled: true
+  Max: 4
+
+Metrics/ClassLength:
+  Enabled: true
+  Max: 250
+
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Max: 8
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: true
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
