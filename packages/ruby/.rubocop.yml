@@ -1,31 +1,35 @@
-inherit_from:
-  - ./.rubocop/layout.yml
-  - ./.rubocop/lint.yml
-  - ./.rubocop/metrics.yml
-  - ./.rubocop/naming.yml
-  - ./.rubocop/performance.yml
-  - ./.rubocop/style.yml
-  - ./.rubocop/rails.yml
-
 require:
-  - rubocop-performance
-  - rubocop-rails
+  - 'rubocop-rails'
+  - 'rubocop-rspec'
 
 AllCops:
   NewCops: enable
-  DisabledByDefault: true
-  SuggestExtensions: false
-  TargetRubyVersion: 2.6.5
   Exclude:
-    - Rakefile
-    - bin/**/*
+    - 'bin/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'spec/**/*'
+    - 'vendor/**/*'
     - .pryrc
-    - node_modules/**/*
-    - tmp/**/*
-    - coverage/**/*
-    - public/**/*
-    - vendor/**/*
 
+Layout/LineLength:
+  Max: 120
 
-Security/Eval:
-  Enabled: true
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Style/Documentation:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Rails/UniqueValidationWithoutIndex: # TODO: Temporary disable until all indexes were add
+  Enabled: false
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - homolog
+    - test
+    - development
