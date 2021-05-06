@@ -1,0 +1,35 @@
+require:
+  - 'rubocop-rails'
+  - 'rubocop-rspec'
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'spec/**/*'
+    - 'vendor/**/*'
+    - .pryrc
+
+Layout/LineLength:
+  Max: 120
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Style/Documentation:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Rails/UniqueValidationWithoutIndex: # TODO: Temporary disable until all indexes were add
+  Enabled: false
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - homolog
+    - test
+    - development
