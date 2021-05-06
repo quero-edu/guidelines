@@ -2,7 +2,7 @@
 
 ## Code Style
 
-- Adicione as configurações da gem [Rubocop] ao projeto. Essas configurações são baseadas no projeto Quero Bolsa. (**)
+- Adicione as configurações da gem [Rubocop] ao projeto.
 - Utilize o [Ruby Style Guide]. A análise e formatação de código da Rubocop é baseada neste guia.
 - Evite modificadores de condicional (linhas que terminam com condicionais).
 - Evite muitas atribuições por linha. (`foo, bar = 1, 2`).
