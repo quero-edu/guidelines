@@ -1,0 +1,25 @@
+{
+  "name": "@quero/eslint-config-react",
+  "version": "1.0.0",
+  "description": "Base eslint config for React projects for Quero Education",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@quero/eslint-config-base": "file:../eslint-config-base",
+    "eslint": "^7.29.0",
+    "eslint-plugin-jest-dom": "^3.9.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-testing-library": "^4.6.0",
+    "react": "^17.0.2"
+  },
+  "peerDependencies": {
+    "@quero/quero-eslint-base": "^1.0.0",
+    "eslint-plugin-jest-dom": "^3.9.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-testing-library": "^4.6.0"
+  }
+}
