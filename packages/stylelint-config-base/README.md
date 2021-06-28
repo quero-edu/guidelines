@@ -2,6 +2,18 @@
 
 Try avoiding [ignoring rules](https://stylelint.io/user-guide/ignore-code).
 
+## Usage
+
+```bash
+npm install --save-dev @quero/stylelint-config-base
+
+cat <<EOF > .stylelintrc.js
+module.exports = {
+    extends: 'stylelint-config-standard'
+}
+EOF
+```
+
 ## Rules
 
 *`block-no-empty`*
