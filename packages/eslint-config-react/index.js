@@ -25,7 +25,6 @@ module.exports = {
   },
   rules: {
     'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
-    'react/jsx-equals-spacing': ['error', 'never'],
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'always' }],
   },
