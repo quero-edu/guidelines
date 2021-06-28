@@ -9,8 +9,8 @@ npm install --save-dev @quero/stylelint-config-base
 
 cat <<EOF > .stylelintrc.js
 module.exports = {
-    extends: 'stylelint-config-standard'
-}
+    extends: '@quero/stylelint-config-base',
+};
 EOF
 ```
 
