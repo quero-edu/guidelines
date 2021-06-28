@@ -16,6 +16,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:testing-library/react',
     'plugin:jest-dom/recommended',
+    'plugin:jsx-a11y/recommended',
   ],
   settings: {
     react: {
