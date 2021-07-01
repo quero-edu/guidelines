@@ -27,7 +27,7 @@ module.exports = {
     'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'always' }],
-    'react/jsx-newline': ['error', { prevent: true }],
+    'react/jsx-newline': ['error', { prevent: false }],
   },
 };
 
