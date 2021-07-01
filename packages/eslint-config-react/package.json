@@ -1,6 +1,6 @@
 {
   "name": "@quero/eslint-config-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Base eslint config for React projects for Quero Education",
   "main": "index.js",
   "scripts": {
