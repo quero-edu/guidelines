@@ -7,4 +7,4 @@ module.exports = {
     './index',
   ].map(require.resolve),
   rules: {},
-}
+};

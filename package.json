@@ -6,6 +6,9 @@
   "directories": {
     "doc": "docs"
   },
+  "scripts": {
+    "lint": "eslint --ext .js --fix --no-eslintrc -c .eslintrc.js ./packages/eslint-config-typescript"
+  },
   "workspaces": [
     "packages/*"
   ],

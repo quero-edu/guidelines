@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     '@quero/eslint-config-base',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking'
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -26,7 +26,7 @@ module.exports = {
     '@typescript-eslint/prefer-regexp-exec': 'off',
     '@typescript-eslint/quotes': [
       'error',
-      'single'
+      'single',
     ],
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/unified-signatures': 'error',
@@ -36,7 +36,7 @@ module.exports = {
     'dot-notation': 'error',
     'eqeqeq': [
       'error',
-      'smart'
+      'smart',
     ],
     'guard-for-in': 'error',
     'id-blacklist': [
@@ -49,12 +49,12 @@ module.exports = {
       'Boolean',
       'boolean',
       'Undefined',
-      'undefined'
+      'undefined',
     ],
     'id-match': 'error',
     'max-classes-per-file': [
       'error',
-      1
+      1,
     ],
     'new-parens': 'error',
     'no-underscore-dangle': 'error',
@@ -63,7 +63,7 @@ module.exports = {
     'object-shorthand': 'error',
     'one-var': [
       'error',
-      'never'
+      'never',
     ],
     'valid-typeof': 'off',
     'use-isnan': 'error',
