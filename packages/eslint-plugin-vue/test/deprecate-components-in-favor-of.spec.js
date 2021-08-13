@@ -1,7 +1,7 @@
 'use strict';
 
-const rule = require('../../src/rules/deprecate-components-in-favor-of');
-const { tester } = require('../tester');
+const rule = require('../lib/deprecate-components-in-favor-of');
+const { tester } = require('../config/eslint-test.config');
 
 tester.run('deprecate-components-in-favor-of', rule, {
   valid: [

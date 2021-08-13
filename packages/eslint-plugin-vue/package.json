@@ -2,7 +2,7 @@
   "name": "@quero/eslint-plugin-vue",
   "version": "1.1.2-alpha.0",
   "description": "A bunch of rules we decided to create ourselves",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "eslint . && npx ./tests/**/*.js"
   },
