@@ -1,6 +1,6 @@
 {
   "name": "@quero/stylelint-config-base",
-  "version": "1.0.5-alpha.0",
+  "version": "1.0.4",
   "description": "Base stylelint config for css and scss in Quero Education's projects",
   "main": "stylelint.config.js",
   "scripts": {
