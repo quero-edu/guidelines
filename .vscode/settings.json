@@ -1,9 +1,0 @@
-{
-  "conventionalCommits.scopes": [
-    "packages",
-    "lerna"
-  ],
-  "eslint.validate": [
-    "javascript",
-  ],
-}
