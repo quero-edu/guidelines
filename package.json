@@ -2,7 +2,10 @@
   "name": "@quero/guidelines",
   "version": "1.0.0",
   "description": "The definitive code-style guide by Quero Educação",
-  "main": "index.js",
+  "engines": {
+    "node": "14",
+    "npm": "7"
+  },
   "directories": {
     "doc": "docs"
   },

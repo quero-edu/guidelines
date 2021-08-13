@@ -7,6 +7,10 @@ contribution file.
 
 For lint configuration packages
 -------------------------------
+### Requirements
+
+- you need to be using node version 14 (LTS)
+- you need to be using npm on your version 7
 
 ### Versioning
 

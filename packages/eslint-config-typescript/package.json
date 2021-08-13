@@ -9,6 +9,6 @@
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "@quero/quero-eslint-base": "file:../eslint-config-base"
+    "@quero/eslint-config-base": "file:../eslint-config-base"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "@quero/eslint-plugin-base",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "index.js",
   "repository": {
     "url": "git+https://github.com/quero-edu/guidelines.git"
   },
