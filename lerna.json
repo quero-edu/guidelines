@@ -1,12 +1,21 @@
 {
   "useWorkspaces": true,
   "version": "independent",
-  "ignoreChanges": [
-    "**/*.md"
-  ],
+  "npmClient": "npm",
   "command": {
     "init": {
       "exact": true
+    },
+    "version": {
+      "conventionalCommits": true,
+      "exact": true,
+      "ignoreChanges": [
+        "*.md"
+      ],
+      "message": "chore(release): publish"
+    },
+    "publish": {
+      "graphType": "all"
     }
   }
 }
