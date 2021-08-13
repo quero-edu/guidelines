@@ -7,15 +7,16 @@
       "exact": true
     },
     "version": {
+      "allowBranch": "master",
       "conventionalCommits": true,
       "exact": true,
-      "ignoreChanges": [
-        "*.md"
-      ],
       "message": "chore(release): publish"
     },
     "publish": {
       "graphType": "all"
     }
-  }
+  },
+  "ignoreChanges": [
+    "*.md"
+  ]
 }

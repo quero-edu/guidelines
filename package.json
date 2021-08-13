@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "lint": "eslint --ext .js --fix --no-eslintrc -c .eslintrc.js ./packages/eslint-config-typescript"
+    "lint": "eslint --ext .js --fix --no-eslintrc -c .eslintrc.js ./packages/eslint-config-typescript",
+    "prerelease": "npm run lint",
+    "release": "lerna version",
+    "postversion": "lerna publish from-git"
   },
   "workspaces": [
     "packages/*"
