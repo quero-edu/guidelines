@@ -16,12 +16,6 @@
   ],
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "@quero/eslint-config-base": "file:../eslint-config-base",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.2.0",
-    "vue-eslint-parser": "^7.1.0"
-  },
   "dependencies": {
     "html-tag-names": "^1.1.5",
     "just-kebab-case": "^1.1.0",

@@ -8,11 +8,7 @@
   },
   "author": "",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "@quero/eslint-config-base": "file:../eslint-config-base"
-  },
-  "peerDependencies": {
-    "@quero/eslint-config-base": "^1.0.0"
+  "dependencies": {
+    "@quero/quero-eslint-base": "file:../eslint-config-base"
   }
 }

@@ -6,17 +6,42 @@
   "directories": {
     "doc": "docs"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/quero-edu/guidelines.git"
   },
-  "author": "quero-edu",
+  "author": "Quero Education",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/quero-edu/guidelines/issues"
   },
   "homepage": "https://github.com/quero-edu/guidelines#readme",
   "devDependencies": {
-    "lerna": "4.0.0"
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@quero/eslint-config-base": "file:../eslint-config-base",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.2.0",
+    "eslint-plugin-jest-dom": "^3.9.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-testing-library": "^4.6.0",
+    "jest": "^26.6.3",
+    "lerna": "4.0.0",
+    "react": "^17.0.2",
+    "vue-eslint-parser": "^7.1.0"
+  },
+  "dependencies": {
+    "@quero/eslint-config-base": "file:packages/eslint-config-base",
+    "@quero/eslint-config-react": "file:packages/eslint-config-react",
+    "@quero/eslint-config-typescript": "file:packages/eslint-config-typescript",
+    "@quero/eslint-config-vue": "file:packages/eslint-config-vue",
+    "@quero/eslint-plugin-base": "file:packages/eslint-plugin-base",
+    "@quero/eslint-plugin-vue": "file:packages/eslint-plugin-vue",
+    "@quero/stylelint-config-base": "file:packages/stylelint-config-base"
   }
 }

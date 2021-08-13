@@ -1,11 +1,12 @@
 {
+  "useWorkspaces": true,
+  "version": "independent",
+  "ignoreChanges": [
+    "**/*.md"
+  ],
   "command": {
     "init": {
       "exact": true
     }
-  },
-  "packages": [
-    "packages/*"
-  ],
-  "version": "independent"
+  }
 }
