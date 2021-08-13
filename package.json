@@ -1,0 +1,22 @@
+{
+  "name": "@quero/guidelines",
+  "version": "1.0.0",
+  "description": "The definitive code-style guide by Quero Educação",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quero-edu/guidelines.git"
+  },
+  "author": "quero-edu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quero-edu/guidelines/issues"
+  },
+  "homepage": "https://github.com/quero-edu/guidelines#readme",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
