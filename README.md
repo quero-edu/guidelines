@@ -3,7 +3,7 @@ _The definitive Quero Education code-style guide._
 
 
 This project is intended to centralize and standardize the code guidelines of our many projects with different stacks.  
-Checkout all of our available guidelines:
+Checkout all of our available guidelines and linter configurations:
 - [Javascript (base)](packages/eslint-config-base/)
   - [Typescript](packages/eslint-config-typescript/)  
   - [React](packages/eslint-config-react/)  
@@ -15,16 +15,16 @@ Checkout all of our available guidelines:
 ### Javascript
 All of our javascript code-style guides extends from `eslint-config-base`. In order to use a specific `eslint-config` just add it to your `.eslintrc.js`. Example:
 ```js
-'extends': [
+  'extends': [
     '@quero/eslint-config-typescript',
-  ]
+  ],
 ```
 
 ### CSS
 Smiliar to javascript, just add the `stylelint-config-base` to your `.stylelintrc.js`:
 ```js
 module.exports = {
-    extends: '@quero/stylelint-config-base',
+  extends: '@quero/stylelint-config-base',
 };
 ```
 
