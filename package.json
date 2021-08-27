@@ -14,7 +14,7 @@
     "pretest": "npm run lint",
     "test": "jest",
     "prerelease": "npm test",
-    "release": "lerna version",
+    "release": "lerna version --conventional-graduate",
     "postversion": "lerna publish from-git"
   },
   "workspaces": [
