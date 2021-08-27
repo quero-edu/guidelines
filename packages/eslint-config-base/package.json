@@ -1,6 +1,6 @@
 {
   "name": "@quero/eslint-config-base",
-  "version": "2.0.1",
+  "version": "2.0.2-alpha.0",
   "description": "Base eslint config for JavaScript projects for Quero Education",
   "main": "index.js",
   "scripts": {

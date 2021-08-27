@@ -1,6 +1,6 @@
 {
   "name": "@quero/eslint-config-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1-alpha.0",
   "description": "Base eslint config for Typescript projects for Quero Education",
   "main": "index.js",
   "scripts": {
