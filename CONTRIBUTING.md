@@ -48,3 +48,5 @@ run the release script
 ```sh
 npm run release
 ```
+
+OBS: you need to have the `NPM_TOKEN` env available in your shell
