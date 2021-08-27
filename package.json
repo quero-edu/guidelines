@@ -13,7 +13,7 @@
     "lint": "eslint --ext .js --fix --no-eslintrc -c .eslintrc.js ./packages/eslint-config-typescript",
     "pretest": "npm run lint",
     "test": "jest",
-    "prerelease": "npm run lint",
+    "prerelease": "npm test",
     "release": "lerna version",
     "postversion": "lerna publish from-git"
   },

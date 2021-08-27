@@ -122,6 +122,63 @@ tester.run('template-kebab-name-for-unregistered-components', rule, {
         </template>
         <script>
         export default {
+          components: {
+            CoolComponent
+          }
+        }
+        </script>
+      `,
+      errors: [
+        {
+          message: 'Component name "UnregisteredComponent" is not kebab-case. Name it "unregistered-component" or register it locally',
+          line: 9,
+          column: 11,
+          endLine: 9,
+          endColumn: 33,
+        },
+        {
+          message: 'Component name "UnregisteredComponent" is not kebab-case. Name it "unregistered-component" or register it locally',
+          line: 10,
+          column: 11,
+          endLine: 10,
+          endColumn: 33,
+        },
+      ],
+      output: `
+        <template>
+          <!-- ✓ GOOD -->
+          <CoolComponent />
+          <cool-component />
+          <unregistered-component />
+
+          <!-- ✗ BAD -->
+          <unregistered-component />
+          <unregistered-component></unregistered-component>
+        </template>
+        <script>
+        export default {
+          components: {
+            CoolComponent
+          }
+        }
+        </script>
+      `,
+    },
+    {
+      filename: 'test.vue',
+      code: `
+        <template>
+          <!-- ✓ GOOD -->
+          <CoolComponent />
+          <cool-component />
+          <unregistered-component />
+
+          <!-- ✗ BAD -->
+          <UnregisteredComponent />
+          <UnregisteredComponent></UnregisteredComponent>
+        </template>
+        <script>
+        export default {
           extends: AnotherComponent,
           components: {
             CoolComponent
