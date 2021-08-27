@@ -7,6 +7,10 @@ contribution file.
 
 For lint configuration packages
 -------------------------------
+### Requirements
+
+- you need to be using node version 14 (LTS)
+- you need to be using npm on your version 7
 
 ### Versioning
 
@@ -27,3 +31,20 @@ Bump the **patch version** if:
 - a `dependency` (on any package.json) was upgraded;
 - a rule was removed;
 - any rule options were changed but they are COMPLETELY fixable with the `--fix` command;
+
+### Release
+
+switch to master branch
+```sh
+git switch master
+```
+
+make sure your local branch is up to date with master branch
+```sh
+git pull origin master
+```
+
+run the release script
+```sh
+npm run release
+```

@@ -1,7 +1,7 @@
 import {
   createRegexForNodeModules,
   createRegexForProjectModules,
-} from '../regex-parses';
+} from '../../lib/only-project-modules/regex-parses';
 
 describe('The regex of rule only-project-modules work correctly', () => {
   describe('when node modules match correctly', () => {

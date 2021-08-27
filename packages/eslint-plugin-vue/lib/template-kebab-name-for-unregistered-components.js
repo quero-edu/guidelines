@@ -4,6 +4,9 @@ const pascalcase = require('pascalcase');
 const kebabcase = require('just-kebab-case');
 
 module.exports = {
+  meta: {
+    fixable: true,
+  },
   create(context) {
     const localregisteredComponents = [];
     let isVueFile = false;

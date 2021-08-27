@@ -1,0 +1,22 @@
+{
+  "useWorkspaces": true,
+  "version": "independent",
+  "npmClient": "npm",
+  "command": {
+    "init": {
+      "exact": true
+    },
+    "version": {
+      "allowBranch": "master",
+      "conventionalCommits": true,
+      "exact": true,
+      "message": "chore(release): publish"
+    },
+    "publish": {
+      "graphType": "all"
+    }
+  },
+  "ignoreChanges": [
+    "*.md"
+  ]
+}

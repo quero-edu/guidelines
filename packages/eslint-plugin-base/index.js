@@ -1,5 +1,5 @@
 
-const { onlyProjectModules } = require('./rules/only-project-modules');
+const { onlyProjectModules } = require('./lib/only-project-modules');
 
 module.exports = {
   rules: {
