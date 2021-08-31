@@ -13,7 +13,11 @@ Checkout all of our available guidelines and linter configurations:
 
 ## Usage
 ### Javascript
-All of our javascript code-style guides extends from `eslint-config-base`. In order to use a specific `eslint-config` just add it to your `.eslintrc.js`. Example:
+All of our javascript code-style guides extends from `eslint-config-base`. In order to use a specific `eslint-config` you need to install it and add it to your `.eslintrc.js`. Example:
+```bash
+$ npm install --save-dev @quero/eslint-config-base @quero/eslint-config-typescript
+```
+
 ```js
   'extends': [
     '@quero/eslint-config-typescript',
@@ -21,7 +25,11 @@ All of our javascript code-style guides extends from `eslint-config-base`. In or
 ```
 
 ### CSS
-Smiliar to javascript, just add the `stylelint-config-base` to your `.stylelintrc.js`:
+Smiliar to javascript, just install it and add the `stylelint-config-base` to your `.stylelintrc.js`:
+```bash
+$ npm install --save-dev @quero/stylelint-config-base
+```
+
 ```js
 module.exports = {
   extends: '@quero/stylelint-config-base',
