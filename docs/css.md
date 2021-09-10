@@ -22,7 +22,16 @@ Nós adotamos o [BEM][1] como base para o nosso workflow. Basicamente BEM é um 
 
 ### Porque isso é importante?
 
-~~Preencher depois~~
+Padroniza a forma como o código é escrito, o auxiliando no entendimento do código, pois, assim, é possível supor onde o elemento está sendo aplicado, por conta do `__elemento`, e, com base no `--modificador`, caso tenha, qual seria a funcionalidade daquela classe.
+
+ **Exemplo:**
+Header de uma página possui um estilo para desktop e outro para mobile.
+
+```css
+.page-header--desktop {}
+.page-header--mobile {}
+```
+
 
 ## Ordenação de propriedades
 
@@ -52,7 +61,7 @@ Todas as propriedades dentro de uma classe devem estar ordenadas alfabeticamente
 
 ### Porque isso é importante?
 
-~~Preencher depois~~
+De modo geral, não há ganhos em performance, mas é importante para garantir uma boa leitura do código e, como consequência, facilitar a manutenção do código.
 
 [1]: http://getbem.com/introduction/
 
