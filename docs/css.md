@@ -22,7 +22,9 @@ Nós adotamos o [BEM][1] como base para o nosso workflow. Basicamente BEM é um 
 
 ### Porque isso é importante?
 
-Padroniza a forma como o código é escrito, o auxiliando no entendimento do código, pois, assim, é possível supor em qual bloco está sendo aplicado, através do `.bloco`, e caso exista, é possível saber o elemento do bloco que faz o uso da classe, por conta do `__elemento`, e com base no `--modificador`, qual seria a funcionalidade daquela classe.
+Padroniza a forma como o código é escrito, o auxiliando no entendimento do código, pois assim, é possível supor em qual bloco está sendo aplicado, através do `.bloco`. E, caso exista, é possível saber o elemento do bloco que faz o uso da classe, por conta do `__elemento`, e com base no `--modificador`, o qual indicaria a funcionalidade daquela classe. 
+
+Além do pontos citados anteriormente, obtemos os benefícios da modularidade, onde estilos de um bloco nunca terão a dependência de estilos de outro, e do reuso, pois as classes são criadas de modo que fiquem o mais independentes/genéricas possíveis, facilitanto a reutilização em outras partes do projeto. [Veja mais na docs do BEM.][1]
 
  **Exemplo:**
 O form de uma página possui um estilo para quando o input está habilitado e outro para desabilitado.
