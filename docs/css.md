@@ -22,16 +22,29 @@ Nós adotamos o [BEM][1] como base para o nosso workflow. Basicamente BEM é um 
 
 ### Porque isso é importante?
 
-Padroniza a forma como o código é escrito, o auxiliando no entendimento do código, pois, assim, é possível supor onde o elemento está sendo aplicado, por conta do `__elemento`, e, com base no `--modificador`, caso tenha, qual seria a funcionalidade daquela classe.
+Padroniza a forma como o código é escrito, o auxiliando no entendimento do código, pois, assim, é possível supor em qual bloco está sendo aplicado, através do `.bloco`, e caso exista, é possível saber o elemento do bloco que faz o uso da classe, por conta do `__elemento`, e com base no `--modificador`, qual seria a funcionalidade daquela classe.
 
  **Exemplo:**
-Header de uma página possui um estilo para desktop e outro para mobile.
+O form de uma página possui um estilo para quando o input está habilitado e outro para desabilitado.
 
 ```css
-.page-header--desktop {}
-.page-header--mobile {}
+.page-form__input--enabled {}
+.page-form__input--disabled {}
 ```
 
+> ### **Obs.:** Para casos onde o modificador identifica se o estilo é aplicado em uma versão `desktop` e outra para `mobile`, dê preferência para o uso de ***media queries***.
+>
+> Costuma-se fazer uma distinção entre mobile e desktop usando o a variável `$screen-desktop` na *media query*. **Exemplo:**
+> ```css
+> .page-header {
+>    /* estilos mobile */
+>    @media(min-width: $screen-desktop) {
+>      /*
+>        estilo aplicado para telas que tenham 
+>        um tamanho maior ou igual a $screen-desktop
+>      */
+>    }
+> }
 
 ## Ordenação de propriedades
 
@@ -61,7 +74,7 @@ Todas as propriedades dentro de uma classe devem estar ordenadas alfabeticamente
 
 ### Porque isso é importante?
 
-De modo geral, não há ganhos em performance, mas é importante para garantir uma boa leitura do código e, como consequência, facilitar a manutenção do código.
+De modo geral, não há ganhos em performance, mas é importante para garantir uma boa leitura do código e, como consequência, facilitar a manutenção do mesmo.
 
 [1]: http://getbem.com/introduction/
 
