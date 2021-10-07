@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.1.1...@quero/eslint-config-typescript@1.1.1) (2021-10-07)
+
+
+### Reverts
+
+* Revert "chore(release): publish" ([5044899](https://github.com/quero-edu/guidelines/commit/5044899ad1928f66c2ea849929b1e2fa945e38d4))
+
+
+
+
+
 # [1.1.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.0.2...@quero/eslint-config-typescript@1.1.0) (2021-09-30)
 
 **Note:** Version bump only for package @quero/eslint-config-typescript
