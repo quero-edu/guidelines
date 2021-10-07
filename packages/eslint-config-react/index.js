@@ -14,6 +14,7 @@ module.exports = {
   extends: [
     '@quero/base',
     'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
     'plugin:testing-library/react',
     'plugin:jest-dom/recommended',
     'plugin:jsx-a11y/recommended',
