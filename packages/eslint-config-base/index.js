@@ -75,6 +75,7 @@ module.exports = {
     }],
     'radix': 'error',
     'object-curly-spacing': ['error', 'always'],
+    'array-bracket-spacing': ['error', 'never'],
     'padding-line-between-statements': ['error',
       { 'blankLine': 'always', 'prev': '*', 'next': ['block-like', 'multiline-expression'] },
       { 'blankLine': 'always', 'prev': ['block-like', 'multiline-expression'], 'next': '*' },
