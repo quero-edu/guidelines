@@ -29,6 +29,7 @@ module.exports = {
     'react/jsx-first-prop-new-line': ['error', 'multiline'],
     'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'always' }],
     'react/jsx-newline': ['error', { prevent: false }],
+    'react/jsx-curly-spacing': ['error', { when: 'never', children: true }],
   },
 };
 
