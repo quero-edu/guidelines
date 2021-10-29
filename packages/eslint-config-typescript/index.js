@@ -80,7 +80,9 @@ module.exports = {
     'comma-spacing': 'off',
     '@typescript-eslint/comma-spacing': ['error'],
     'indent': 'off',
-    '@typescript-eslint/indent': ['error', 2, { 'SwitchCase': 1 }],
+    // https://github.com/typescript-eslint/typescript-eslint/issues/1824
+    // Decorator parameter bug: #4036, #1232, #640
+    '@typescript-eslint/indent': 'off',
     'keyword-spacing': 'off',
     '@typescript-eslint/keyword-spacing': [ 'error', { 'after': true, 'before': true }],
     'no-duplicate-imports': 'off',
