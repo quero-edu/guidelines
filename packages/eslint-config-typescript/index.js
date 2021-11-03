@@ -119,7 +119,7 @@ module.exports = {
       plugins: ['jest'],
       rules: {
         '@typescript-eslint/unbound-method': 'off',
-        'jest/unbound-method': 'error',
+        'jest/unbound-method': 'off',
       },
     },
   ],
