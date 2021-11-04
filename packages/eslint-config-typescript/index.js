@@ -34,6 +34,13 @@ module.exports = {
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/prefer-regexp-exec': 'off',
+    '@typescript-eslint/restrict-template-expressions': ['error', {
+      'allowNumber': true,
+      'allowBoolean': false,
+      'allowAny': true,
+      'allowNullish': false,
+      'allowRegExp': false,
+    }],
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/unified-signatures': 'error',
     'complexity': 'warn',
