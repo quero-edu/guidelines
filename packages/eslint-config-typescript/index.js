@@ -91,7 +91,7 @@ module.exports = {
     // Decorator parameter bug: #4036, #1232, #640
     '@typescript-eslint/indent': 'off',
     'keyword-spacing': 'off',
-    '@typescript-eslint/keyword-spacing': [ 'error', { 'after': true, 'before': true }],
+    '@typescript-eslint/keyword-spacing': ['error', { 'after': true, 'before': true }],
     'no-duplicate-imports': 'off',
     '@typescript-eslint/no-duplicate-imports': ['error'],
     'no-extra-semi': 'off',
