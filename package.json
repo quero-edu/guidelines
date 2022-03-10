@@ -4,7 +4,7 @@
   "description": "The definitive code-style guide by Quero Educação",
   "engines": {
     "node": "14",
-    "npm": "7"
+    "npm": "8"
   },
   "directories": {
     "doc": "docs"
