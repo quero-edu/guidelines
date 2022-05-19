@@ -1,6 +1,6 @@
 {
   "name": "@quero/eslint-config-vue",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Base eslint config for Vue projects for Quero Education",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,6 @@
   "license": "MIT",
   "peerDependencies": {
     "@quero/quero-eslint-base": "file:../eslint-config-base",
-    "eslint-plugin-vue": "^5.2.2"
+    "eslint-plugin-vue": "^8.5.0"
   }
 }

@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "The definitive code-style guide by Quero Educação",
   "engines": {
-    "node": "14",
-    "npm": "8"
+    "node": "^14.0.0",
+    "npm": "^8.0.0"
   },
   "directories": {
     "doc": "docs"

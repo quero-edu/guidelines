@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-react@1.1.0...@quero/eslint-config-react@1.2.0) (2022-04-04)
+
+
+### Features
+
+* **eslint-config-react:** add rule to control spacing on jsx curly braces ([a597dfd](https://github.com/quero-edu/guidelines/commit/a597dfd02d496cb818cb65f60ec93ee7ff8ac988))
+
+
+
+
+
 # [1.1.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-react@1.0.6...@quero/eslint-config-react@1.1.0) (2021-10-07)
 
 
