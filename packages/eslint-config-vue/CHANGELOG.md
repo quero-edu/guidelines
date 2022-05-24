@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-vue@2.0.0...@quero/eslint-config-vue@2.0.1) (2022-05-24)
+
+
+### Bug Fixes
+
+* peer conflicts with npm 8 ([#80](https://github.com/quero-edu/guidelines/issues/80)) ([fa2dbb7](https://github.com/quero-edu/guidelines/commit/fa2dbb721c78c9ddb15d059865a6a19b60d844e2))
+
+
+
+
+
 # [2.0.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-vue@1.0.1...@quero/eslint-config-vue@2.0.0) (2022-04-04)
 
 
