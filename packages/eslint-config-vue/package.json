@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "@quero/quero-eslint-base": "*",
-    "eslint-plugin-vue": "^8.5.0"
+    "@quero/quero-eslint-base": "file:../eslint-config-base",
+    "eslint-plugin-vue": "^9.0.1"
   }
 }
