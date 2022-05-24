@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The definitive code-style guide by Quero Educação",
   "engines": {
-    "node": "^14.0.0",
+    "node": "^16.0.0",
     "npm": "^8.0.0"
   },
   "directories": {
@@ -15,7 +15,8 @@
     "test": "jest",
     "prerelease": "npm test",
     "release": "lerna version --conventional-graduate",
-    "postversion": "lerna publish from-git"
+    "postversion": "lerna publish from-git",
+    "canary": "lerna publish --canary --preid $(git branch --show-current) --dist-tag canary --yes"
   },
   "workspaces": [
     "packages/*"

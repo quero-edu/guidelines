@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "@quero/eslint-config-base": "*",
+    "@quero/eslint-config-base": "^2.0.0",
     "eslint-plugin-jest": "^25.2.2"
   }
 }
