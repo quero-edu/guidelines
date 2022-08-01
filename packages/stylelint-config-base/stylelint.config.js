@@ -70,7 +70,6 @@ module.exports = {
     'declaration-no-important': true,
     'font-family-no-duplicate-names': true,
     'font-family-no-missing-generic-family-keyword': true,
-    'function-calc-no-invalid': true,
     'function-calc-no-unspaced-operator': true,
     'function-comma-newline-after': 'always-multi-line',
     'function-comma-space-after': 'always-single-line',
