@@ -9,10 +9,10 @@
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "stylelint": ">= 13.0.0"
+    "stylelint": ">= 14.0.0"
   },
   "dependencies": {
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.19.0"
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }
