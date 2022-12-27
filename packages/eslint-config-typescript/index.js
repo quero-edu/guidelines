@@ -11,7 +11,11 @@ module.exports = {
     '@typescript-eslint/naming-convention': [
       'error',
       { 'selector': 'typeLike', 'format': ['PascalCase'] },
-      { 'selector': 'variableLike', 'format': ['camelCase', 'UPPER_CASE'] },
+      {
+        'selector': 'variableLike',
+        'format': ['camelCase', 'UPPER_CASE'],
+        'leadingUnderscore': 'allow',
+      },
       {
         'selector': 'interface',
         'format': ['PascalCase'],
