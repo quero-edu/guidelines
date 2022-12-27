@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.2.2...@quero/eslint-config-typescript@1.2.3) (2022-12-27)
+
+
+### Bug Fixes
+
+* **eslint-config-typescript:** allow leading underscore on variable naming convention ([b017e47](https://github.com/quero-edu/guidelines/commit/b017e47e9b6f6df3be3fa5ebb595ad89d25541f7))
+
+
+
+
+
 ## [1.2.2](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.2.1...@quero/eslint-config-typescript@1.2.2) (2022-05-24)
 
 
