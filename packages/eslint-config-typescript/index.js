@@ -23,6 +23,7 @@ module.exports = {
       },
     ],
     '@typescript-eslint/consistent-type-assertions': 'error',
+    '@typescript-eslint/consistent-type-imports': 'error',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-empty-interface': 'error',
     '@typescript-eslint/no-explicit-any': 'off',
