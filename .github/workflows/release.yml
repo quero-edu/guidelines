@@ -1,0 +1,77 @@
+name: Release Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+
+    env:
+      CI: true
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    steps:
+    - uses: actions/checkout@main
+      with:
+       fetch-depth: 0
+
+    - uses: fregante/setup-git-user@v1
+
+    - name: Load dependencies versions
+      id: versions
+      run: |
+        echo "node=$(sed -ne '/\"engines\":/,/},/p' ./package.json | sed -ne 's/^\s*\"node\": \"\\|\",$//gp')" >> $GITHUB_OUTPUT
+
+    - uses: actions/setup-node@master
+      with:
+        node-version: ${{ steps.versions.outputs.node }}
+        cache: 'npm' # save global npm install cache
+
+    - name: Add node_modules to PATH env
+      run: npm bin >> $GITHUB_PATH
+
+    - name: Generate Dependencies Cache
+      id: dependencies
+      uses: actions/cache@main
+      with:
+        path: node_modules
+        key: ${{ hashFiles('package-lock.json') }}
+
+    - name: Install dependencies
+      if: steps.dependencies.outputs.cache-hit != 'true'
+      run: npm clean-install
+
+    - name: Check
+      run: |
+        npm run test
+
+    - name: Run release canary
+      if: ${{ !(contains('refs/heads/alpha refs/heads/next refs/heads/master refs/heads/main', github.ref) || (startsWith(github.ref, 'refs/heads/v') && endsWith(github.ref, '.x'))) }}
+      run: |
+        lerna publish --canary --preid $(git branch --show-current) --dist-tag canary --yes
+
+    - name: Run release alpha
+      if: github.ref == 'refs/heads/alpha'
+      run: |
+        lerna version --conventional-prerelease --no-changelog --preid alpha --yes
+        lerna publish from-package --canary --preid alpha --dist-tag alpha --yes
+
+    - name: Run release next
+      if: github.ref == 'refs/heads/next'
+      run: |
+        lerna version --conventional-prerelease --no-changelog --preid next --yes
+        lerna publish from-package --canary --preid next --dist-tag next --yes
+
+    - name: Run release old majors
+      if: (startsWith(github.ref, 'refs/heads/v') && endsWith(github.ref, '.x')) # matches v*.x: v4.x, v15.x, ...
+      run: |
+        lerna version --conventional-graduate --yes --create-release github
+        lerna publish from-git --yes
+
+    - name: Run release latest
+      if: github.ref == 'refs/heads/main'
+      run: |
+        lerna version --conventional-graduate --yes --create-release github
+        lerna publish from-git --yes
