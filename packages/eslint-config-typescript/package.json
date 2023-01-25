@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@quero/eslint-config-base": "^2.0.0",
     "eslint-plugin-jest": "^25.2.2"
   }
