@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-vue@2.0.2...@quero/eslint-config-vue@3.0.0) (2023-02-17)
+
+
+### Features
+
+* **eslint-config-vue:** remove vue 2 recommendations from extend list ([306523a](https://github.com/quero-edu/guidelines/commit/306523a4a702884b1ae783203e703082cfbe9649))
+
+
+### BREAKING CHANGES
+
+* **eslint-config-vue:** you now must manually choose to extend from the vue plugin recommendation, either plugin:vue3-recommendations or plugin:vue-recommendations (if you are still using vue@2)
+
+
+
+
+
 ## [2.0.2](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-vue@2.0.1...@quero/eslint-config-vue@2.0.2) (2022-05-24)
 
 
