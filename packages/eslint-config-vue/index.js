@@ -5,7 +5,6 @@ module.exports = {
   },
   extends: [
     '@quero/eslint-config-base',
-    'plugin:vue/recommended',
   ],
   plugins: [
     'vue',
