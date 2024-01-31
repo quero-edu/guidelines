@@ -1,6 +1,6 @@
 {
   "name": "@quero/eslint-config-vue",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Base eslint config for Vue projects for Quero Education",
   "main": "index.js",
   "scripts": {
