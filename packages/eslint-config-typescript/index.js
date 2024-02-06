@@ -3,12 +3,19 @@ module.exports = {
     '@quero/eslint-config-base',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:import/typescript',
+  ],
+  plugins: [
+    'import',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: ['./tsconfig.json'],
   },
   rules: {
+    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+    'import/no-duplicates': ['error', { 'considerQueryString': true }],
+
     // It is safe to disable this rule when using TypeScript because TypeScript's compiler enforces this check.
     'no-undef': 'off',
 
@@ -104,6 +111,7 @@ module.exports = {
     '@typescript-eslint/indent': 'off',
     'keyword-spacing': 'off',
     '@typescript-eslint/keyword-spacing': ['error', { 'after': true, 'before': true }],
+
     'no-extra-semi': 'off',
     '@typescript-eslint/no-extra-semi': ['error'],
     'no-invalid-this': 'off',
