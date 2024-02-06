@@ -4,6 +4,10 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: ['./tsconfig.json'],
+  },
   rules: {
     // It is safe to disable this rule when using TypeScript because TypeScript's compiler enforces this check.
     'no-undef': 'off',
@@ -100,8 +104,6 @@ module.exports = {
     '@typescript-eslint/indent': 'off',
     'keyword-spacing': 'off',
     '@typescript-eslint/keyword-spacing': ['error', { 'after': true, 'before': true }],
-    'no-duplicate-imports': 'off',
-    '@typescript-eslint/no-duplicate-imports': ['error'],
     'no-extra-semi': 'off',
     '@typescript-eslint/no-extra-semi': ['error'],
     'no-invalid-this': 'off',
