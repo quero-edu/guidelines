@@ -5,6 +5,9 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   rules: {
+    // It is safe to disable this rule when using TypeScript because TypeScript's compiler enforces this check.
+    'no-undef': 'off',
+
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/ban-types': 'error',
