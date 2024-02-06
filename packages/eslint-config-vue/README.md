@@ -7,6 +7,8 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-recommended',
     // 'plugin:vue/vue-recommended', // if you are still using vue 2
+    '@quero/eslint-config-typescript',
+    // '@quero/eslint-config-base', // if you are still using pure javascript
     '@quero/eslint-config-vue',
     'plugin:vuejs-accessibility/recommended',
   ],

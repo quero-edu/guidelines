@@ -3,9 +3,6 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  extends: [
-    '@quero/eslint-config-base',
-  ],
   plugins: [
     'vue',
   ],
