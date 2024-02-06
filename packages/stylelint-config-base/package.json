@@ -2,6 +2,7 @@
   "name": "@quero/stylelint-config-base",
   "version": "2.0.0",
   "description": "Base stylelint config for css and scss in Quero Education's projects",
+  "type": "module",
   "main": "stylelint.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
