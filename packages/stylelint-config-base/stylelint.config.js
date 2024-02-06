@@ -1,7 +1,7 @@
 module.exports = {
   plugins: [
     'stylelint-order',
-    'stylelint-scss'
+    'stylelint-scss',
   ],
   rules: {
     'at-rule-empty-line-before': [
@@ -14,7 +14,7 @@ module.exports = {
     'at-rule-no-unknown': null,
     'block-no-empty': true,
     'color-hex-length': 'short',
-    'color-named': `never`,
+    'color-named': 'never',
     'color-no-invalid-hex': true,
     'comment-empty-line-before': [
       'always',
@@ -81,4 +81,13 @@ module.exports = {
     'unit-no-unknown': true,
     'value-keyword-case': 'lower',
   },
+  overrides: [
+    {
+      files: ['*.vue'],
+      extends: [
+        'stylelint-config-standard-scss',
+        'stylelint-config-recommended-vue/scss',
+      ],
+    },
+  ],
 };
