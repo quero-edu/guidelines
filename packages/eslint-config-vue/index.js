@@ -1,11 +1,18 @@
 module.exports = {
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  extends: [
+    'plugin:vue/vue3-recommended',
+    'plugin:vuejs-accessibility/recommended',
+  ],
   plugins: [
     'vue',
+    'vuejs-accessibility',
+    '@quero/vue',
   ],
+  parser: 'vue-eslint-parser',
   rules: {
     'vue/html-closing-bracket-newline': [
       'error',
