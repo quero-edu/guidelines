@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.2](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.3.1...@quero/eslint-config-typescript@1.3.2) (2024-02-06)
+
+
+### Bug Fixes
+
+* **typescript:** disable no-undef rule because compiler takes care of it ([513b0fc](https://github.com/quero-edu/guidelines/commit/513b0fcad6e4bb5c019fbd38e0273132fe31cb0b))
+
+
+
+
+
 ## [1.3.1](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.3.0...@quero/eslint-config-typescript@1.3.1) (2024-01-31)
 
 **Note:** Version bump only for package @quero/eslint-config-typescript

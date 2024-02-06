@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-vue@3.0.1...@quero/eslint-config-vue@4.0.0) (2024-02-06)
+
+
+### Bug Fixes
+
+* **vue:** make so you need to specify if using TS or JS ([00543df](https://github.com/quero-edu/guidelines/commit/00543df3676091d05306928fabce811830b65b06))
+
+
+### BREAKING CHANGES
+
+* **vue:** when using @quero/eslint-config-vue, also extend from
+one of the options @quero/eslint-config-base or @quero/eslint-config-typescript
+
+
+
+
+
 ## [3.0.1](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-vue@3.0.0...@quero/eslint-config-vue@3.0.1) (2024-01-31)
 
 **Note:** Version bump only for package @quero/eslint-config-vue
