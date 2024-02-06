@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-vue@4.0.0...@quero/eslint-config-vue@5.0.0) (2024-02-06)
+
+
+### chore
+
+* **vue:** make eslint config from now on only compatible with typescript ([0f01c3d](https://github.com/quero-edu/guidelines/commit/0f01c3da22c430cb3a5a80fe0ff705dfc03b404f))
+* **vue:** make eslint config from now on only compatible with vue 3 ([6cf4ee3](https://github.com/quero-edu/guidelines/commit/6cf4ee3e901741c7c51bb9b228ed9858312735c4))
+
+
+### BREAKING CHANGES
+
+* **vue:** only compatible with typescript from now on
+* **vue:** only compatible with vue 3 from now on
+
+
+
+
+
 # [4.0.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-vue@3.0.1...@quero/eslint-config-vue@4.0.0) (2024-02-06)
 
 

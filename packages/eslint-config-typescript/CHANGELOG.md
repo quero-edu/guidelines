@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.3.2...@quero/eslint-config-typescript@1.4.0) (2024-02-06)
+
+
+### Features
+
+* **typescript:** configure import plugin to get back no-duplicate-imports after deprecation ([27572cb](https://github.com/quero-edu/guidelines/commit/27572cbd156099ee0998c4f262ad12034f1c6e26))
+
+
+
+
+
 ## [1.3.2](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.3.1...@quero/eslint-config-typescript@1.3.2) (2024-02-06)
 
 
