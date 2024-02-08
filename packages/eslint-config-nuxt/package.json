@@ -11,6 +11,6 @@
   "dependencies": {
     "@quero/eslint-config-base": "^2.1.0",
     "@quero/eslint-config-typescript": "1.4.1",
-    "@quero/eslint-plugin-vue": "^1.1.2"
+    "@quero/eslint-config-vue": "^5.0.0"
   }
 }
