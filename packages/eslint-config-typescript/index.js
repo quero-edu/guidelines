@@ -15,9 +15,8 @@ module.exports = {
   rules: {
     'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
 
-    // This rule conflicts with consistent-type-imports, it is safe to disable as there is a typescript specific counterpart.
+    // Turning off vanilla no-duplicate-imports in favor of imports/no-duplicate to support `import type` syntax properly
     'no-duplicate-imports': 'off',
-
     'import/no-duplicates': ['error', { 'considerQueryString': true }],
 
     // It is safe to disable this rule when using TypeScript because TypeScript's compiler enforces this check.
