@@ -14,6 +14,12 @@ module.exports = {
     {
       files: ['*.ts'],
       extends: ['@quero/eslint-config-typescript'],
+      parserOptions: {
+        project: [
+          './tsconfig.json',
+          './server/tsconfig.json',
+        ],
+      },
     },
     {
       files: ['*.vue'],
@@ -24,6 +30,10 @@ module.exports = {
       parserOptions: {
         parser: '@typescript-eslint/parser',
         extraFileExtensions: ['.vue'],
+        project: [
+          './tsconfig.json',
+          './server/tsconfig.json',
+        ],
       },
       rules: {
         'vue/component-name-in-template-casing': [
