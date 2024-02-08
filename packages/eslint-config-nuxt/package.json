@@ -1,6 +1,6 @@
 {
   "name": "@quero/eslint-config-nuxt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Base eslint config for Vue projects for Quero Education",
   "main": "index.js",
   "scripts": {
