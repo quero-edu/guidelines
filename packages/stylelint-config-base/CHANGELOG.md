@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/quero-edu/guidelines/compare/@quero/stylelint-config-base@2.0.1...@quero/stylelint-config-base@2.0.2) (2024-02-12)
+
+**Note:** Version bump only for package @quero/stylelint-config-base
+
+
+
+
+
 ## [2.0.1](https://github.com/quero-edu/guidelines/compare/@quero/stylelint-config-base@2.0.0...@quero/stylelint-config-base@2.0.1) (2024-02-06)
 
 **Note:** Version bump only for package @quero/stylelint-config-base
