@@ -1,9 +1,16 @@
+// @ts-check
+/** @type {import('stylelint').Config} */
 export default {
   plugins: [
     'stylelint-order',
     'stylelint-scss',
   ],
+  customSyntax: 'postcss-scss',
+  extends: [
+    'stylelint-config-standard-scss',
+  ],
   rules: {
+    'annotation-no-unknown': null,
     'at-rule-empty-line-before': [
       'always',
       {
@@ -11,7 +18,6 @@ export default {
         ignore: ['after-comment'],
       },
     ],
-    'at-rule-no-unknown': null,
     'block-no-empty': true,
     'color-hex-length': 'short',
     'color-named': 'never',
@@ -23,7 +29,6 @@ export default {
         ignore: ['stylelint-commands'],
       },
     ],
-    'comment-no-empty': true,
     'comment-whitespace-inside': 'always',
     'custom-property-empty-line-before': [
       'always',
@@ -53,14 +58,19 @@ export default {
     'function-calc-no-unspaced-operator': true,
     'function-linear-gradient-no-nonstandard-direction': true,
     'function-name-case': 'lower',
+    'function-no-unknown': null,
     'keyframe-declaration-no-important': true,
     'length-zero-no-unit': true,
     'media-feature-name-no-unknown': true,
+    'media-query-no-invalid': null,
     'no-descending-specificity': true,
     'no-duplicate-at-import-rules': true,
     'no-duplicate-selectors': true,
     'no-empty-source': true,
     'no-invalid-double-slash-comments': true,
+    'no-invalid-position-at-import-rule': [true, {
+      ignoreAtRules: ['use', 'forward'],
+    }],
     'order/order': ['custom-properties', 'declarations'],
     'order/properties-alphabetical-order': true,
     'property-no-unknown': true,
@@ -71,7 +81,9 @@ export default {
         ignore: ['after-comment'],
       },
     ],
-    'scss/at-rule-no-unknown': true,
+    'selector-class-pattern': ['^\.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$', {
+      message: 'Expected "%s" to match BEM pattern. See https://gist.github.com/Potherca/f2a65491e63338659c3a0d2b07eee382',
+    }],
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-colon-notation': 'double',
     'selector-pseudo-element-no-unknown': true,
@@ -80,14 +92,39 @@ export default {
     'string-no-newline': true,
     'unit-no-unknown': true,
     'value-keyword-case': 'lower',
+
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': true,
+
+    'comment-no-empty': null,
+    'scss/comment-no-empty': true,
+
+    'scss/at-extend-no-missing-placeholder': true,
+    'scss/at-if-no-null': true,
+    'scss/at-import-partial-extension': 'never',
+    'scss/declaration-nested-properties-no-divided-groups': true,
+    'scss/dollar-variable-no-missing-interpolation': true,
+    'scss/function-quote-no-quoted-strings-inside': true,
+    'scss/function-unquote-no-unquoted-strings-inside': true,
+    'scss/load-no-partial-leading-underscore': true,
+    'scss/no-duplicate-mixins': true,
+    'scss/no-global-function-names': true,
+    'scss/operator-no-newline-after': true,
+    'scss/operator-no-newline-before': true,
+    'scss/operator-no-unspaced': true,
   },
   overrides: [
     {
-      files: ['*.vue'],
-      extends: [
-        'stylelint-config-standard-scss',
-        'stylelint-config-recommended-vue/scss',
-      ],
+      files: ['*.vue', '**/*.vue'],
+      customSyntax: 'postcss-html',
+      rules: {
+        'selector-pseudo-class-no-unknown': [true, {
+          ignorePseudoClasses: ['deep', 'global', 'slotted'],
+        }],
+        'selector-pseudo-element-no-unknown': [true, {
+          ignorePseudoElements: ['v-deep', 'v-global', 'v-slotted'],
+        }],
+      },
     },
   ],
 };
