@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-nuxt@1.1.1...@quero/eslint-config-nuxt@1.1.2) (2024-02-18)
+
+**Note:** Version bump only for package @quero/eslint-config-nuxt
+
+
+
+
+
 ## [1.1.1](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-nuxt@1.1.0...@quero/eslint-config-nuxt@1.1.1) (2024-02-08)
 
 

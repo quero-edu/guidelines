@@ -1,6 +1,6 @@
 {
   "name": "@quero/eslint-config-nuxt",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Base eslint config for Vue projects for Quero Education",
   "main": "index.js",
   "scripts": {
@@ -9,8 +9,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@quero/eslint-config-base": "^2.1.0",
-    "@quero/eslint-config-typescript": "1.4.1",
-    "@quero/eslint-config-vue": "^5.0.0"
+    "@quero/eslint-config-base": "2.2.0",
+    "@quero/eslint-config-typescript": "1.4.2",
+    "@quero/eslint-config-vue": "5.0.1"
   }
 }
