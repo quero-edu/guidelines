@@ -81,8 +81,8 @@ export default {
         ignore: ['after-comment'],
       },
     ],
-    'selector-class-pattern': ['^\.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$', {
-      message: 'Expected "%s" to match BEM pattern. See https://gist.github.com/Potherca/f2a65491e63338659c3a0d2b07eee382',
+    'selector-class-pattern': ['^[a-z][a-z0-9-]*(__[a-z0-9-]*)?(--[a-z0-9-]*)?$', {
+      message: 'Expected "%s" to match BEM pattern. See https://getbem.com/naming/',
     }],
     'selector-pseudo-class-no-unknown': true,
     'selector-pseudo-element-colon-notation': 'double',
