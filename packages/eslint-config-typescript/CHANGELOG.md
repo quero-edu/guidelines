@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.4.2...@quero/eslint-config-typescript@1.5.0) (2024-06-26)
+
+
+### Features
+
+* **typescript:** upgrade outdated dependencies ([90da465](https://github.com/quero-edu/guidelines/commit/90da465ab317897d752a617d990a4b388486c685))
+
+
+
+
+
 ## [1.4.2](https://github.com/quero-edu/guidelines/compare/@quero/eslint-config-typescript@1.4.1...@quero/eslint-config-typescript@1.4.2) (2024-02-18)
 
 **Note:** Version bump only for package @quero/eslint-config-typescript

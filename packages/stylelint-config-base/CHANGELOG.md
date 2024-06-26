@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/quero-edu/guidelines/compare/@quero/stylelint-config-base@2.0.3...@quero/stylelint-config-base@2.1.0) (2024-06-26)
+
+
+### Features
+
+* **stylelint:** add support for tailwind custom at-rules ([2653cd8](https://github.com/quero-edu/guidelines/commit/2653cd8f4aac45e5ef354c6c1671d0ab6cec12d8))
+
+
+
+
+
 ## [2.0.3](https://github.com/quero-edu/guidelines/compare/@quero/stylelint-config-base@2.0.2...@quero/stylelint-config-base@2.0.3) (2024-05-03)
 
 
