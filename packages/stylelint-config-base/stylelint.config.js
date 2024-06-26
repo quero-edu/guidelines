@@ -94,7 +94,17 @@ export default {
     'value-keyword-case': 'lower',
 
     'at-rule-no-unknown': null,
-    'scss/at-rule-no-unknown': true,
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: [
+          'tailwind',
+          'apply',
+          'layer',
+          'config',
+        ],
+      },
+    ],
 
     'comment-no-empty': null,
     'scss/comment-no-empty': true,
